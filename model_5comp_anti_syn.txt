@@ -1,0 +1,46 @@
+12      # total number of componets
+0.01    #comp1  ### initial concentration in the sequence
+0.5     #comp2
+0.004   #comp3
+0.002   #comp4
+0       #comp5
+0       #comp6
+0       #comp7
+0.75    #comp8
+0       #comp9
+0       #comp10
+0       #comp11
+0       #comp12
+### reaction information ###
+8 # number of reactions forward and backward reaction are 4
+6.2e12    #rxn1 ### rate constant of reaction in the sequence
+8.8e-49   #rxn2
+ 1.1e6    #rxn3
+ 8.1e-3   #rxn4
+ 1.8e6    #rxn5
+ 9.5e-6   #rxn6
+ 6.2e12   #rxn7
+ 1.2e10   #rxn8
+### Role of componets in reaction  -1:reactant, 1 product, 0 none
+-1 -1 -1 -1  1  1  1  0  0  0  0  0 # Comp 1-n : reaction 1
+ 1  1  1  1 -1 -1 -1  0  0  0  0  0 # Comp 1-n : reaction 2
+ 0  0  0  0  0  0 -1 -1  1  0  0  0 # Comp 1-n : reaction 3
+ 0  0  0  0  0  0  1  1 -1  0  0  0 # Comp 1-n : reaction 4
+ 0  0  0  0  0  0  0  0 -1  1  0  0 # comp 1-n : reaction 5
+ 0  0  0  0  0  0  0  0  1 -1  0  0 # comp 1-n : reaction 6
+ 0 -1  0  0  0  0  1  0  0 -1  1  1 # comp 1-n : reaction 7
+ 0  1  0  0  0  0 -1  0  0  1 -1 -1 # comp 1-n : reaction 8
+#Coefficient  of the componet in rxn
+ 1  1  2  1  1 1 1 0 0 0 0 0  # Comp 1-n: rxn 1
+ 1  1  2  1  1 1 1 0 0 0 0 0  # Comp 1-n: rxn 2
+ 0  0  0  0  0 0 1 1 1 0 0 0  # Comp 1-n: rxn 3
+ 0  0  0  0  0 0 1 1 1 0 0 0  # Comp 1-n: rxn 4
+ 0  0  0  0  0 0 0 0 1 1 0 0  # Comp 1-n: rxn 5
+ 0  0  0  0  0 0 0 0 1 1 0 0  # Comp 1-n: rxn 6
+ 0  1  0  0  0 0 1 0 0 1 1 1  # Comp 1-n: rxn 7
+ 0  1  0  0  0 0 1 0 0 1 1 1  # Comp 1-n: rxn 8
+# model parameters
+5e-13    # dt ## time step
+1e-6     # Total time 
+1000     # Writing after how much iteration
+
